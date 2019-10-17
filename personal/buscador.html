@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<!--
+###############################################################################
+# Copyright (c) 2006 Juan Jose Pedraza Perales                                #
+###############################################################################
+-->
+<script language="JavaScript">
+<!--//
+function OpenCCs(callcenters) {
+     browserVer = parseInt(navigator.appVersion);
+     if(browserVer>2 )
+	if (callcenters) {	hWnd=window.open('http://200.23.59.46/speed/gobtam/hellohel.nsf/logincc2.htm?ReadForm&hhlang=01&EN','','hotkeys=no,screenX=0,screenY=0,left=0,top=0,width=260,height=380');
+        } else {
+window.open('http://200.23.59.46/speed/gobtam/hellohel.nsf/login.htm?ReadForm&hhlang=01&UN=&CC=01&EN','','hotkeys=no,screenX=0,screenY=0,left=0,top=0,width=260,height=380')
+        }
+ }       
+//-->
+</script>
+
+<script language="javascript">
+var TieneFoco = true
+
+function CambiarTieneFoco() {
+	if (TieneFoco == true) {
+		TieneFoco = false
+		document.formModo.modo.value = "Normal"
+	} else if (TieneFoco == false) {
+		TieneFoco = true
+		document.formModo.modo.value = "Siempre visible"
+		DaFoco()
+	}
+}
+
+function DaFoco() {
+	if (TieneFoco == true)
+		setTimeout("self.focus()",100)
+}
+
+</script>
+<!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     : Sitio Creado por el Programador: Juan Jose Pedraza Perales :
+     : para el Gobierno Municipal de soto la marina 2005-2007             :
+     :                                                            :
+     : genio_endiablado@hotmail.com                               :
+     : cel: 8361009578                                             :
+     ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ -->
+<script language="JavaScript">
+function disableselect(e)
+{
+   return false
+}
+function reEnable()
+{
+   return true
+}
+//if IE4+
+document.onselectstart=new Function ("return false")
+//if NS6
+if (window.sidebar)
+{
+   document.onmousedown=disableselect
+   document.onclick=reEnable
+}
+</script>
+
+<SCRIPT language=JavaScript>
+//(c)2004 Zone FNeoX
+function click() {
+if (event.button==2) {
+alert("                      G o b i e r n o        M u n i c i p a l (c)        2005-2007                   \n                                  Soto la Marina, Tamps.\n\n                WebMaster: genio_endiablado@hotmail.com")
+
+}
+}
+document.onmousedown=click
+//-->
+</SCRIPT>
+
+
+<meta http-equiv="Content-Language" content="es-mx">
+
+<style type="text/css">
+BODY      
+{ 
+scrollbar-face-color:#FFFFFF;
+scrollbar-shadow-color:#D5D5D5;
+scrollbar-highlight-color:#FFFFFF;
+scrollbar-3dlight-color:#909090;
+scrollbar-darkshadow-color:#909090;
+scrollbar-track-color:#EFEFEF;
+scrollbar-arrow-color:#909090
+
+
+	
+}
+A:link {
+	COLOR: #4D5E7D; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #4D5E7D; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #4D5E7D; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+</style>
+
+
+<head>
+<title>Busqueda de Personal</title>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<meta NAME="AUTHOR" CONTENT="Iván Nieto Pérez">
+<script type="text/javascript" language="javascript" src="dbs.js"></script>
+<script type="text/javascript" language="javascript" src="buscador.js"></script>
+<script type="text/javascript" language="javascript">MuestraEstilos();</script>
+</head>
+
+<body>
+
+	<h1>Búsqueda de Personal</h1>
+	<p>Introduzca una palabra clave, como puede ser el nombre, apellido o cargo 
+	del empleado que desea buscar y pulse el botón <strong>Buscar</strong>. (no 
+	Enter)</p>
+	<script type="text/javascript" language="javascript">MuestraBuscador();</script>
+
+<p>&nbsp;</p>
+							</body>
+</html>

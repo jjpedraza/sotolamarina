@@ -1,0 +1,218 @@
+<html>
+
+<head>
+<!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     : Sitio Creado por el Programador: Juan Jose Pedraza Perales :
+     : para el Gobierno Municipal de Soto la Marina 2005-2007             :
+     :                                                            :
+     : genio_endiablado@hotmail.com                               :
+     : cel: 8361009578                                             :
+     ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ -->
+<script language="JavaScript">
+function disableselect(e)
+{
+   return false
+}
+function reEnable()
+{
+   return true
+}
+//if IE4+
+document.onselectstart=new Function ("return false")
+//if NS6
+if (window.sidebar)
+{
+   document.onmousedown=disableselect
+   document.onclick=reEnable
+}
+</script>
+
+<SCRIPT language=JavaScript>
+//(c)2004 Zone FNeoX
+function click() {
+if (event.button==2) {
+alert("                      G o b i e r n o        M u n i c i p a l (c)        2005-2007                   \n                                 Soto la Marina, Tamps.\n\n                WebMaster: genio_endiablado@hotmail.com")
+
+}
+}
+document.onmousedown=click
+//-->
+</SCRIPT>
+
+
+<meta http-equiv="Content-Language" content="es-mx">
+
+<style type="text/css">
+BODY      
+{ 
+scrollbar-face-color:#FFFFFF;
+scrollbar-shadow-color:#D5D5D5;
+scrollbar-highlight-color:#FFFFFF;
+scrollbar-3dlight-color:#909090;
+scrollbar-darkshadow-color:#909090;
+scrollbar-track-color:#EFEFEF;
+scrollbar-arrow-color:#909090
+
+	FONT-FAMILY: Verdana, Arial, Helvetica; 
+	font-size: 12px;
+	background-color: #ffffff;
+	
+}
+A:link {
+	COLOR: #4D5E7D; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #4D5E7D; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #4D5E7D; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+
+
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Presentacion de la Ley de Transparencia</title>
+</head>
+
+<body  onLoad="cargarLista();>
+
+<div style="position: absolute; width: 566px; height: 442px; z-index: 1; left:1px; top:1px" id="capa1">
+
+<font class="Titulo"><br>
+<br>
+<form id="formulario" name="formulario">
+  Buscar:
+  <input type="text" id="busca" name="busca" onKeyUp="buscar();">
+  <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+  <select id="miCombo" name="miCombo" size=3></select>
+</form>
+
+<script>
+
+ // Defino el array con los datos
+ lista = new Array('Prudencio Hernandez garcia ','Aerobic','Balonmano','Beisbol',
+ 'Badminton','Baloncesto','Footing','Fútbol','Gimnasia','Voleibol');
+   
+ function cargarLista() {
+  // Cargamos el combo
+  for (x=0;x<lista.length;x++)
+    document.formulario.miCombo[x] = new Option(lista[x]);
+ }
+
+ function buscar() {
+
+   limpiarLista();
+   
+   // Obtengo el valor del texto
+   texto = document.formulario.busca.value;
+   
+   // Creo la expresión regular
+   expr = new RegExp("^" + texto,"i");
+   
+   // Recorro la lista. Si la expresión regular    es OK
+   y = 0;
+   
+   for (x=0;x<lista.length;x++) {
+     if (expr.test(lista[x])) {
+      document.formulario.miCombo[y]    = new Option(lista[x]);
+       y++;
+     }
+   }
+ }
+   
+ function limpiarLista() {
+   for (x=document.formulario.miCombo.length;x>=0;x--)
+     document.formulario.miCombo[x] = null; 
+ }
+   
+</script>
+
+Rango de Percepciones</font>
+<br>
+<br>
+<table border="0" width="95%" cellspacing="0" id="table2">
+	<tr class="Encabezado_Tabla1">
+		<td width="10%" class="td_encabezado_tabla">NIVEL</td>
+		<td width="60%" class="td_encabezado_tabla">CATEGOR&Iacute;A</td>
+		<td width="15%" class="td_encabezado_tabla">M&Iacute;NIMO</td>
+		<td width="15%" class="td_encabezado_tabla">M&Aacute;XIMO</td>
+	</tr>
+	<tr class="tr_blanco">
+		<td align="center">1</td>
+		<td>Auxiliares de limpieza, veladores y asistentes</td>
+		<td><div align="right"> $1,000.00</div></td>
+		<td><div align="right">$1,999.00</div></td>
+	</tr>
+	<tr class="tr_gris">
+		<td align="center">2</td>
+		<td>Agentes de policia y tr&aacute;nsito, secretarias</td>
+		<td><div align="right">$2,000.00</div></td>
+		<td><div align="right">$2,999.00</div></td>
+	</tr>
+	<tr class="tr_blanco">
+		<td align="center">3</td>
+		<td>Choferes, auxiliares administrativos, recepcionistas</td>
+		<td><div align="right">$3,000.00</div></td>
+		<td><div align="right">$3,999.00</div></td>
+	</tr>
+	<tr class="tr_gris">
+		<td align="center">4</td>
+		<td>Administrativos, Responsables de Area, Jefes de Mantenimiento y Juez Calificador</td>
+		<td><div align="right">$4,000.00</div></td>
+		<td><div align="right">$4,999.00</div></td>
+	</tr>
+	<tr class="tr_blanco">
+		<td align="center">5</td>
+		<td>Gestores, Subdirectores, Coordinadores de Area y Psicologa.</td>
+		<td><div align="right">$5,000.00</div></td>
+		<td><div align="right">$5,999.00</div></td>
+	</tr>
+	<tr class="tr_gris">
+	  <td align="center">6</td>
+	  <td>Terapeutica, Director y auxiliares T&eacute;cnicos.</td>
+	  <td><div align="right">$6,000.00</div></td>
+	  <td><div align="right">$6,999.00</div></td>
+	  </tr>
+	<tr class="tr_blanco">
+	  <td align="center">7</td>
+	  <td>Asesores, Oficial Mayor.</td>
+	  <td><div align="right">$7,000.00</div></td>
+	  <td><div align="right">$7,999.00</div></td>
+	  </tr>
+	<tr class="tr_gris">
+	  <td align="center">8</td>
+	  <td>Directores, Coordinadores Y Contralor.</td>
+	  <td><div align="right">$8,000.00</div></td>
+	  <td><div align="right">$8,999.00</div></td>
+	  </tr>
+	<tr class="tr_blanco">
+	  <td align="center">9</td>
+	  <td>Secretario del Ayuntamiento</td>
+	  <td><div align="right">$12,000.00</div></td>
+	  <td><div align="right">18,999.00</div></td>
+	  </tr>
+	<tr class="tr_gris">
+	  <td align="center">10</td>
+	  <td>Regidores y Sindico.</td>
+	  <td><div align="right">$19,000.00</div></td>
+	  <td><div align="right">$20,000.00</div></td>
+	  </tr>
+	<tr class="tr_blanco">
+	  <td align="center">11</td>
+	  <td>Presidente</td>
+	  <td><div align="right">$20,001.00</div></td>
+	  <td><div align="right">$35,000.00</div></td>
+	  </tr>
+</table>
+
+<p>&nbsp;</div>
+
+</body>
+
+</html>
